@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Mukeshimana</title>
+   
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Sacramento&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: #000000;
+            justify-content: center;
+            text-align: center;
+            font-family: "Merriweather", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding: 90px 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+
+        .content {
+            max-width: 9000px;
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .intro {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #21438d;
+            font-size: 3rem;
+            text-align: center;
+            margin: 50px auto 0 auto;
+        }
+
+        h2 {
+            color: #2d6be7;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2rem;
+            font-weight: normal;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #title {
+            text-align: center;
+            text-align: center;
+        }
+
+        h3 {
+            color: #0a68e4;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+        }
+
+        p {
+            line-height: 2;
+            text-align: center;
+        }
+
+        hr {
+            border: dotted #eaf6f6 6px;
+            text-align: center;
+            border-bottom: none;
+            width: 4%;
+            margin: 50px auto;
+        }
+
+        a {
+            color: #0545f3;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+            margin: 10px 20px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #690587;
+            text-align: center;
+        }
+
+        .top-container {
+            background-color: #e4f9f5;
+            text-align: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .middle-container {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .bottom-container {
+            background-color: #66a4bf;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .skill-row {
+            width: 90%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .pro {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .intro {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-message {
+            width: 90%;
+            margin: 20px auto;
+            
+            text-align: center;
+        }
+
+        .copyright {
+            color: #eaf6f6;
+            font-size: 0.75rem;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .top-cloud, .bottom-cloud, .mountain {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .btn {
+            background: #710b9c;
+            background-image: -webkit-linear-gradient(top, #095ad2, #115fa0);
+            background-image: -moz-linear-gradient(top, #143aaa, #11358f);
+            background-image: -ms-linear-gradient(top, #0b3e9c, #122889);
+            background-image: -o-linear-gradient(top, #0b3e9c, #0b3e9c);
+            background-image: linear-gradient(to bottom, #0b3e9c, #0b3e9c);
+            border-radius: 8px;
+            font-family: "Montserrat", sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #8b0b9c;
+            background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            width: 90%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .typing, .bread-img {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .typing img, .bread-img img {
+            border-radius: 50%;
+            width: 100%;
+            text-align: center;
+            max-width: 300px;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .profile {
+                flex-direction: row;
+                text-align: center;
+                padding: 90px;
+                text-align: center;
+            }
+            .profile-container {
+                flex-direction: row;
+                text-align: center;
+            }
+            
+            .content {
+                padding: 0;
+                text-align: center;
+                margin: 0 auto;
+            }
+            h1 {
+                font-size: 5rem;
+                text-align: center;
+            }
+            h2 {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .skill-row {
+                width: 50%;
+                text-align: center;
+            }
+            .intro {
+                width: 50%;
+                text-align: center;
+            }
+            .contact-message {
+                width: 40%;
+                text-align: center;
+            }
+            .parent {
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+                width: 80%;
+                margin: 50px auto;
+            }
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.section-title {
+    color: #007BFF;
+    font-size: 2.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.background, .profile-container, .certification-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.project {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    color: #007BFF;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #ba0ae1;
+}
+
+.certification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.certification {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certification-title {
+    color: #007BFF;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.certification-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.certification-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.certification-link:hover {
+    background-color: #a528ed;
+}
+
+.Centered {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #007bff;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+  }
+
+  div {
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive layout */
+  }
+
+  .contact-form, .contact-details {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .contact-form {
+    background-color: #f9f9f9;
+  }
+
+  .contact-details {
+    background-color: #fff;
+  }
+
+  /* Style for the form inputs */
+  .feedback-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Font size for better readability */
+    color: #333; /* Font color */
+    background-color: #f0f0f0; /* Light background color */
+  }
+
+  /* Ensure text is visible when typing */
+  .feedback-input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #ffffff; /* Change background to white on focus */
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Make submit button full width */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive design: stack form and contact details on small screens */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+
+    .contact-form, .contact-details {
+      margin-bottom: 20px;
+    }
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3f8;
+}
+
+.landing-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #f7f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 350px;
+    height: 450px;
+    border-radius: 50%;
+    margin-left: 0%;
+    object-fit: cover;
+    border: 5px solid #eb10ef;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.profile-text {
+    max-width: 550px;
+    text-align: left;
+}
+
+.profile-text h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    color: #007BFF;
+}
+
+.profile-text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="middle-container">
+        <div class="landing-container">
+            <div class="profile-section">
+                <img class="profile-img" src="Jackson-profile.jpg" alt="Jackson's profile">
+                <div class="profile-text">
+                    <h1>Hello, I'm Jackson</h1>
+                    <p>
+                        I'm a <strong>Data Scientist</strong>, <strong>Sales Engineer</strong>, and <strong>Web Developer</strong> passionate about building innovative web applications and using data to solve real-world problems.
+                    </p>
+                    <p><strong>My Tools:</strong> HTML, CSS, JavaScript, Python, C++, AI.</p>
+                </div>
+            </div>
+        
+            <div class="info-container">
+                <div class="info-box">
+                    <h2>What I Enjoy?</h2>
+                    <p>
+                        A huge football fan, I love following international sports tournaments. Outside work, you'll often find me enjoying long walks to recharge and stay refreshed.
+                    </p>
+                </div>
+        
+                <div class="info-box">
+                    <h2>Fun Fact</h2>
+                    <p>
+                        <strong>Top Skill:</strong> I'm a <strong> Bread Enthusiast 🍞</strong>! Known among friends as the "Bread King, 👑" I’m always ready for some whole grain or sprouted bread. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr>
+        <div class="skills">
+            <h2>How It Started? </h2>
+            <div class="parent">
+                
+                <div class="typing">
+                    
+                    <img src="cat-typing.gif" alt="typing cat">
+                </div>
+                <div class="coding">
+                    <h3 id="title">Design & Development</h3>
+                    
+                    <p>I started coding at 20, dreaming of using tech to tackle real-life challenges in Rwanda. I'm not quite there yet, but I've learned a lot while building mobile and web apps. Still on the journey, and always aiming to make a difference.</p>
+                </div>
+                
+               
+            </div>
+
+           
+
+<h2 class="section-title">Key Projects</h2>
+
+<div class="project-container">
+    <!-- FIFA World Cup Project -->
+    <div class="project">
+        <h3 class="project-title">FIFA World Cup 2022 Data Analysis</h3>
+        <a href="https://huggingface.co/spaces/JacksonMu/FIFA-World-Cup-2022-Data-Analysis" target="_blank">
+            <img src="fifa-project.jpg" alt="FIFA World Cup Project" class="project-image">
+        </a>
+        <p>Leveraged machine learning to predict game outcomes and analyze key variables for scoring goals.</p>
+        <a href="https://huggingface.co/spaces/JacksonMu/FIFA-World-Cup-2022-Data-Analysis" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <!-- TinDog Project -->
+    <div class="project">
+        <h3 class="project-title">TinDog</h3>
+        <a href="https://jackson-s-current-porfolio-vbff-qk4b5zr0r-jackson-mus-projects.vercel.app/" target="_blank">
+            <img src="tindog-project.jpg" alt="TinDog Project" class="project-image">
+        </a>
+        <p>Platform to Discover the best dog parks, connect with dog lovers, and find fun playmates for your dog!</p>
+        <a href="https://jackson-s-current-porfolio-vbff-qk4b5zr0r-jackson-mus-projects.vercel.app/" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <!-- Hotel Finder Project -->
+    <div class="project">
+        <h3 class="project-title">Hotel Finder Application</h3>
+        <a href="https://github.com/Jackson-Mu/HotelFinder-Application?tab=readme-ov-file#hotel-finder-application" target="_blank">
+            <img src="hotel-finder.jpg" alt="Hotel Finder Project" class="project-image">
+        </a>
+        <p>Built a smart tool that quickly finds hotels in various cities using optimized data structures.</p>
+        <a href="https://github.com/Jackson-Mu/HotelFinder-Application?tab=readme-ov-file#hotel-finder-application" target="_blank" class="project-link">View Project</a>
+    </div>
+</div>
+
+
+
+<h2 class="section-title">Certifications</h2>
+<div class="certification-container">
+    <!-- FullStack Web Development Certification -->
+    <div class="certification">
+        <h3 class="certification-title">Complete FullStack Web Development</h3>
+        <a href="https://www.udemy.com/certificate/UC-52b387af-c247-4c36-a8aa-6188b1f9fa01/" target="_blank">
+            <img src="fullstack-certification.jpg" alt="FullStack Web Development Certification" class="certification-image">
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-52b387af-c247-4c36-a8aa-6188b1f9fa01/" target="_blank" class="certification-link">View Certification</a>
+    </div>
+
+    <!-- IBM Client Engineering and Sales Track Externship -->
+    <div class="certification">
+        <h3 class="certification-title">IBM Client Engineering and Sales Track Externship</h3>
+        <a href="https://www.credly.com/badges/b90612a2-112f-4f2c-a54c-0aa8d3aeb605/public_url" target="_blank">
+            <img src="ibm-certification.jpg" alt="IBM Client Engineering and Sales Track Externship" class="certification-image">
+        </a>
+        <a href="https://www.credly.com/badges/b90612a2-112f-4f2c-a54c-0aa8d3aeb605/public_url" target="_blank" class="certification-link">View Certification</a>
+    </div>
+</div>
+
+
+
+
+
+            <hr>
+
+           
+
+            <div class="contact-me">
+                <h2>Get In Touch</h2>
+                <h3>Do you love football & eating bread as much as I do?</h3>
+                <p class="contact-message">Let's chat about our favorite matches! We can even code together afterwards!</p>
+                
+            </div>
+
+           
+
+<div class="contact-container">
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h2 >Send Me a Message</h2>
+
+  
+
+    <form action="/send-message" method="POST">
+      <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+      <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+      <textarea name="message" class="feedback-input" placeholder="Comment" required></textarea>
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </div>
+
+  <!-- Contact Details -->
+  <div class="contact-details">
+    <h2 class>Contact Information</h2>
+    <p><strong>Phone:</strong> <a href="tel:+16464096172">+1 646 409 6172</a></p>
+    <p><strong>Email:</strong> 
+      <a href="mailto:mukesjackson02@gmail.com">jackson.mukeshimana@nyu.edu</a> || 
+      <a href="mailto:jackson.mukeshimana@nyu.edu"> mukesjackson02@gmail.com</a>
+    </p>
+    <p><strong>Address:</strong></p>
+    <p>
+      75 Third Avenue<br />
+      New York, NY 10003<br />
+      USA
+    </p>
+  </div>
+</div>
+        </div>
+    </div>
+        <div class="bottom-container">
+            <a class="footer-link" href="https://github.com/Jackson-Mu">Github</a>
+            <a class="footer-link" href="https://huggingface.co/spaces/JacksonMu/FIFA-World-Cup-2022-Data-Analysis">Hugging Face Personal Site</a>
+            <a class="footer-link" href="mailto:mukesjackson02@gmail.com">Email</a>
+            <p class="copyright">© 2024,  Jackson Mu.</p>
+        </div>
+
+</body>
+</html>
